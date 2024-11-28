@@ -1,10 +1,9 @@
-import styles from './Frame.module.css'; // Importando os estilos de CSS Module
+import styles from './Frame.module.css'; 
 import { FunnelSimple } from 'phosphor-react'
 
 export function Frame() {
   return (
     <div className={styles.cont}>
-      {/* Filtros */}
       <div className={styles.filter}>
         <div className={styles.buttonGroup}>
           <button className={styles.filterButtonActive}>Mês</button>
@@ -65,8 +64,6 @@ export function Frame() {
             </tbody>
           </table>
         </div>
-
-        {/* Mensagem no lado direito */}
         <div className={styles.details}>
           <p1>Hmm parece que nenhum item foi selecionado ainda</p1>
           <p2>Selecione algo para que possamos te ajudar!</p2>
