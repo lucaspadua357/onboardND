@@ -59,7 +59,6 @@
   font-size: 1rem;
 }
 
-/* Ajustar cores ao passar o mouse */
 .filterButton:hover,
 .filterButtonActive:hover,
 .filterIconButton:hover {
@@ -94,27 +93,17 @@
   padding: 1.25rem;
   text-align: left;
   border-bottom: 0.063rem solid var(--gray-700);
-}
-
-.table th {
-  background-color: var(--gray-600);
-}
-
-.table tr:nth-child(even) {
-  background-color: var(--gray-900);
+  cursor: pointer;
 }
 
 .details {
-  width: 25%; /* Define uma largura proporcional ao card de detalhes */
+  width: 25%;
   padding: 1.25rem;
   background-color: var(--gray-900);
   border-radius: 0.625rem;
-  text-align: center;
-  color: var(--gray-400);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 
 .details img {
@@ -122,16 +111,40 @@
   height: 5rem;
   margin-bottom: 0.938rem;
 }
+.details h3{
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: var(--gray-700);
+  padding: 15px 15px;
+  margin: -20px -20px 15px -20px;
+}
 
+.details p8{
+  position: absolute;
+  font-weight: 800;
+  bottom: 3.5rem;
+  text-align: left;
+}
 .details p1 {
   font-size: 1.25rem;
   font-weight: 800;
   margin: 0.313rem 0rem;
+  color: var(--gray-500);
+  justify-content: center;
+  text-align: center;
+}
+
+.detailsEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;     
+  height: 100%;           
+}
+
+.activeRow {
+  background-color: var(--gray-700);
   color: var(--white);
 }
-
-.details p2 {
-  margin: 0.313rem 0rem;
-}
-
-
